@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DISTRO_LIST=(arch NOOBS NOOBS_lite pidora raspbian raspbmc riscos)
+DISTRO_LIST=(NOOBS NOOBS_lite pidora raspbian raspbmc riscos)
 PI_DOWNLOADS=http://www.raspberrypi.org/downloads/
 WORK_DIR=${HOME}/piconfig
 SHA_CACHE=${WORK_DIR}/distro-sha.txt
@@ -15,14 +15,13 @@ function chooseDistro() {
     clear
     echo "Choose a distro:"
     echo
-    echo "1) arch           -      Arch Linux"
-    echo "2) NOOBS          -      Offline and network install"
-    echo "3) NOOBS Lite     -      Network install only"
-    echo "4) pidora         -      Fedora Remix"
-    echo "5) raspbian       -      Debian Wheezy"
-    echo "6) raspbmc        -      XBMC Media Centre"
-    echo "7) riscos         -      Non-Linux distribution"
-    echo "8) Exit           -      Exits this script"
+    echo "1) NOOBS          -      Offline and network install"
+    echo "2) NOOBS Lite     -      Network install only"
+    echo "3) pidora         -      Fedora Remix"
+    echo "4) raspbian       -      Debian Wheezy"
+    echo "5) raspbmc        -      XBMC Media Centre"
+    echo "6) riscos         -      Non-Linux distribution"
+    echo "7) Exit           -      Exits this script"
     echo
     echo -n "Enter distro number: "
     read OPTION
